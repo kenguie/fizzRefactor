@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 var upto;
 
-fizzbuzz = function(upto) {
+function fizzbuzz(upto) {
     var i;
     
     for (i=1; i<=upto; i++) {
