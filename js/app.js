@@ -21,6 +21,13 @@ var fizzbuzz = function(upto) {
 };
     
 var upto=prompt("What number would you like to count up to?");
-fizzbuzz(upto);
+
+    if (upto%1 !== 0) {
+        alert("Please enter a number that is not a decimal.")
+    } else if (upto == "" ) {
+        alert("Please enter a number.")
+    } else {
+        fizzbuzz(upto)
+    };
 
 });
