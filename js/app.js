@@ -1,9 +1,11 @@
 $(document).ready(function() {
 
-//You’ll need to write one named function that takes an integer as argument, and then counts from 1 to the argument value, substituting “fizz”, “buzz”, and “fizzbuzz” accordingly.
+var upto;
 
-var fizzbuzz = function(upto) {
-    for (var i=1; i<=upto; i++) {
+fizzbuzz = function(upto) {
+    var i;
+    
+    for (i=1; i<=upto; i++) {
         if (i%3===0 && i%5===0) {
             console.log ("FizzBuzz")
             $(".fizzbuzz").append ("<li> FizzBuzz </li>");
@@ -20,7 +22,7 @@ var fizzbuzz = function(upto) {
     };
 };
     
-var upto=prompt("What number would you like to count up to?");
+upto=prompt("What number would you like to count up to?");
 
     if (upto%1 !== 0) {
         alert("Please enter a number that is not a decimal.")
